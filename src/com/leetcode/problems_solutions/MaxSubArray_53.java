@@ -9,7 +9,7 @@ public class MaxSubArray_53 {
 		int res1 = maxSubArray(arr2);
 		System.out.println("Max sub array: " +  res);
 		
-		System.out.println("Max sub array: " +  res1);
+		System.out.println("Max sub array for second array: " +  res1);
 		
 	}
 	
