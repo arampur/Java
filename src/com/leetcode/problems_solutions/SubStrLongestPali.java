@@ -103,7 +103,6 @@ public class SubStrLongestPali {
          int level = 0;
          q.add(root);
          
-         
          while(!q.isEmpty()) {
              int treeLevels = q.size();
              
