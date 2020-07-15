@@ -25,7 +25,6 @@ public class SubStrLongestPali {
 		maxDepth(node);
 		
 		
-		
 		int unq = countUnivalSubtrees(node);
 		System.out.println(unq);
 		
