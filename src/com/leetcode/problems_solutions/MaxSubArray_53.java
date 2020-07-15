@@ -6,7 +6,6 @@ public class MaxSubArray_53 {
 		int[] arr = {-2,1,-3,4,-1,2,1,-5,4};
 		int res = maxSubArray(arr);
 		System.out.println("Max sub array: " +  res);
-
 	}
 	
 	 public static int maxSubArray(int[] nums) {
