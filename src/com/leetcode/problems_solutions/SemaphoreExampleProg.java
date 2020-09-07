@@ -23,7 +23,7 @@ class threadDemo extends Thread {
 			
 			try {
 				System.out.println(threadName + " is waiting for a permit.");
-				//sem.acquire();
+				sem.acquire();
 				System.out.println("Thread 1 acquired permit");
 				
 				for(int i =0;i<2;i++)
@@ -34,7 +34,7 @@ class threadDemo extends Thread {
 					Thread.sleep(15);
 				}
 				
-				//sem.release();
+				sem.release();
 				System.out.println("Thread 1 done executing");
 				
 				
@@ -47,7 +47,7 @@ class threadDemo extends Thread {
 			System.out.println("Starting " + threadName); 
 			try {
 				System.out.println(threadName + " waiting for permit"); 
-				//sem.acquire();
+				sem.acquire();
 				System.out.println("Thread t2 processing");
 				
 				for(int i = 0;i<2;i++) {
@@ -57,7 +57,7 @@ class threadDemo extends Thread {
 					Thread.sleep(15);
 				}
 				
-				//sem.release();
+				sem.release();
 				System.out.println("Thread t2 done executing");
 				
 			} catch (InterruptedException e) {
